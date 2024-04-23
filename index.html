@@ -37,22 +37,29 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarExample04">
-     <ul class="navbar-nav ms-auto mb-2 mb-md-0 nav-justified fw-bold">
+     <ul class="navbar-nav ms-auto mb-2 mb-md-0 nav-justified row-gap-2 fw-bold">
       <li class="nav-item dropdown">
-       <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false"
-        >Dropdown</a
+       <a
+        class="nav-link dropdown-toggle active"
+        href="#"
+        id="dropdown04"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+        >Чемпионат</a
        >
-       <ul class="dropdown-menu border-1 border-opacity-10" aria-labelledby="dropdown04">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
+       <ul class="dropdown-menu border-1 border-opacity-10 rounded-3" aria-labelledby="dropdown04">
+        <li><a class="dropdown-item" href="#directions">Положение</a></li>
+        <li><a class="dropdown-item" href="#schedule">Период проведения</a></li>
+        <li><a class="dropdown-item" href="#results">Результаты</a></li>
+        <li><a class="dropdown-item" href="#about">О нас</a></li>
+        <li><a class="dropdown-item" href="#contacts">Контактные данные</a></li>
        </ul>
       </li>
-      <li class="nav-item">
-       <a class="nav-link" aria-current="page" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link active" href="#">Чемпионат</a>
+      <!-- <li class="nav-item">
+       <a class="nav-link" aria-current="page" href="#">Ссылка</a>
+      </li> -->
+      <li class="nav-item ms-md-3">
+       <a class="btn btn-outline-primary rounded-pill" href="#">Регистрация</a>
       </li>
       <li class="nav-item"></li>
      </ul>
@@ -61,6 +68,9 @@
   </nav>
 
   <main class="container mx-auto">
+   <section class="bg__hero-container" id="hero">
+    <div class="bg__hero-img"></div>
+   </section>
    <section class="hero">
     <h2 class="display-5 fw-medium text-center lh-1">
      Чемпионат по робототехнике развивающий и закрепляющий успехи участников
@@ -74,7 +84,7 @@
      <a href="#" class="col-md-3 btn btn-lg btn-primary rounded-pill">Положениe</a>
     </div>
    </section>
-   <section class="directions row-cols-1 row p-2 p-md-4 p-sm-3 bg-body-tertiary rounded-4">
+   <section class="directions row-cols-1 row p-2 p-md-4 p-sm-3 bg-body-tertiary rounded-5" id="directions">
     <div class="col title"><h1 class="display-4 text-start fw-medium text-start">Направления чемпионата</h1></div>
     <div class="col cards">
      <div class="row justify-content-start row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-auto g-3">
@@ -91,7 +101,7 @@
           excepturi nisi minima beatae qui vero eius mollitia perspiciatis? Quasi, eveniet! Sit.
          </p>
         </div>
-        <div class="card-footer">
+        <div class="card-footer bg-body">
          <a href="#" class="link fw-medium link"><i class="bi bi-file-text"></i> Положение</a>
         </div>
        </div>
@@ -108,7 +118,7 @@
           Reprehenderit qui alias similique excepturi vitae quisquam esse eaque.
          </p>
         </div>
-        <div class="card-footer">
+        <div class="card-footer bg-body">
          <a href="#" class="link fw-medium link"><i class="bi bi-file-text"></i> Положение</a>
         </div>
        </div>
@@ -116,7 +126,104 @@
      </div>
     </div>
    </section>
-   <section class="about p-3 rounded-4">
+   <section class="competition__schedule rounded-5 p-sm-4" id="schedule">
+    <div class="competition__schedule-body text-bg-light rounded-4 p-md-4 bg-body-tertiary py-3 p-sm-3">
+     <h2 class="display-4 fw-medium text-start lh-1">Расписание соревнований</h2>
+     <div class="border border-3 border-warning rounded-4 p-3 mt-3">
+      <h5>Обратите внимание!</h5>
+      <p>
+       Расписание может быть подвержено незначительным изменениям в зависимости от обстоятельств. Мы рекомендуем следить
+       за обновлениями на нашем сайте, в социальных сетях и по ссылке ниже.
+      </p>
+      <a href="#" class="link fw-medium link"><i class="bi bi-file-text"></i> Подробное расписание</a>
+     </div>
+     <div class="schedule-row p-2 p-md-4 w-75 mx-auto">
+      <h3 class="period">I тур</h3>
+      <div class="dates ps-md-2">
+       <div class="row gx-3">
+        <div class="col-auto"><div class="fw-medium">5.06.2024</div></div>
+        <div class="col-auto"><div>Чемпионат по робототехнике</div></div>
+       </div>
+       <div class="row gx-3">
+        <div class="col-auto"><div class="fw-medium">5.06.2024</div></div>
+        <div class="col-auto"><div>Чемпионат по робототехнике</div></div>
+       </div>
+       <div class="row gx-3">
+        <div class="col-auto"><div class="fw-medium">5.06.2024</div></div>
+        <div class="col-auto"><div>Чемпионат по робототехнике</div></div>
+       </div>
+       <div class="row gx-3">
+        <div class="col-auto"><div class="fw-medium">5.06.2024</div></div>
+        <div class="col-auto"><div>Чемпионат по робототехнике</div></div>
+       </div>
+      </div>
+      <h3 class="period mt-lg-2">II тур</h3>
+      <div class="dates ps-md-2">
+       <div class="row gx-3">
+        <div class="col-auto"><div class="fw-medium">5.06.2024</div></div>
+        <div class="col-auto"><div>Чемпионат по робототехнике</div></div>
+       </div>
+       <div class="row gx-3">
+        <div class="col-auto"><div class="fw-medium">5.06.2024</div></div>
+        <div class="col-auto"><div>Чемпионат по робототехнике</div></div>
+       </div>
+       <div class="row gx-3">
+        <div class="col-auto"><div class="fw-medium">5.06.2024</div></div>
+        <div class="col-auto"><div>Чемпионат по робототехнике</div></div>
+       </div>
+       <div class="row gx-3">
+        <div class="col-auto"><div class="fw-medium">5.06.2024</div></div>
+        <div class="col-auto"><div>Чемпионат по робототехнике</div></div>
+       </div>
+      </div>
+      <h3 class="period mt-2 col-auto w-auto">III тур</h3>
+      <div class="dates ps-md-2">
+       <div class="row gx-3">
+        <div class="col-auto"><div class="fw-medium">5.06.2024</div></div>
+        <div class="col-auto"><div>Чемпионат по робототехнике</div></div>
+       </div>
+       <div class="row gx-3">
+        <div class="col-auto"><div class="fw-medium">5.06.2024</div></div>
+        <div class="col-auto"><div>Чемпионат по робототехнике</div></div>
+       </div>
+       <div class="row gx-3">
+        <div class="col-auto"><div class="fw-medium">5.06.2024</div></div>
+        <div class="col-auto"><div>Чемпионат по робототехнике</div></div>
+       </div>
+       <div class="row gx-3">
+        <div class="col-auto"><div class="fw-medium">5.06.2024</div></div>
+        <div class="col-auto"><div>Чемпионат по робототехнике</div></div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="results text-center" id="results">
+    <h2 class="display-5 fw-medium lh-1">Результаты и Наградные материалы</h2>
+    <div class="row gx-2">
+     <div class="col-12">
+      <div class="border border-3 border-warning rounded-4 p-3 mt-4 text-center mx-auto" style="max-width: 36rem">
+       <h5>Обратите внимание!</h5>
+       <p>
+        После завершения оценивания работ жюри соревнования, результаты будут предоставлены участникам после
+        <b> 20 июня 2024 года. </b>
+       </p>
+      </div>
+     </div>
+     <div class="col-12">
+      <div class="p-3 text-start d-flex flex-column justify-content-center align-items-center mt-3">
+       <p class="text-center">
+        Результаты и наградные материалы будут доступны в документах и гугл-диске по ссылкам ниже
+       </p>
+       <div class="d-flex justify-content-center gap-3">
+        <a href="#" class="col-auto link"><i class="bi bi-file-text"></i> Результаты</a>
+        <a href="#" class="col-auto link"><i class="bi bi-file-text"></i> Наградной материал</a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="about p-3 rounded-5" id="about">
     <div class="row align-items-center m-auto">
      <div class="col-12 col-md-6 text-black bg-white rounded-4 p-4 ms-auto">
       <h2 class="display-3 fw-medium">О нас</h2>
@@ -130,7 +237,7 @@
      </div>
     </div>
    </section>
-   <section class="coaches p-2 p-md-4 p-sm-3 bg-body-tertiary rounded-4">
+   <section class="coaches p-2 p-md-4 p-sm-3 bg-body-tertiary rounded-5" id="coaches">
     <h2 class="display-3 fw-medium text-start pb-3">Наши тренеры</h2>
     <div class="coache__list row row-cols-xl-3 row-cols-lg-2 row-cols-md-1 g-3">
      <div class="col-12">
@@ -205,6 +312,54 @@
     </div>
    </section>
   </main>
+  <footer class="bg-body-tertiary p-md-5 px-2 py-5">
+   <section class="container contacts p-md-4 p-sm-3 rounded-5 my-0" id="contacts">
+    <div class="row row-cols-md-2">
+     <div class="col-12">
+      <div class="contacts__info d-flex flex-column gap-3 align-items-end text-end">
+       <h2 class="display-3 fw-medium text-start">Контакты</h2>
+       <div class="contacts__info">
+        <dd class="d-flex gap-3 justify-content-end mb-5">
+         <a
+          href="https://e-daryn.kz/main/sections?filter%5Bselected%5D=0&filter%5Bregion_id%5D=10&filter%5Btype%5D=section&filter%5Bis_gos%5D=0&filter%5Bfree%5D=0&filter%5Bopen%5D=0&filter%5Bclosed%5D=0&filter%5Bdirection_id%5D=11&filter%5Bsearch%5D=%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9+%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%BE%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B8&filter%5Blanguage_kz%5D=0&filter%5Blanguage_ru%5D=0"
+          class="link text-center d-flex flex-column align-items-center gap-0"
+         >
+          <div><i class="bi bi-globe fs-1"></i></div>
+          <div>e-daryn</div>
+         </a>
+         <a
+          href="https://www.instagram.com/robot_krg?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          class="link text-center d-flex flex-column align-items-center gap-0"
+         >
+          <div><i class="bi bi-instagram fs-1"></i></div>
+          <div>rotot_krg</div>
+         </a>
+         <!-- <a
+          href="https://www.instagram.com/dsh.karaganda?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          class="link text-center d-flex flex-column align-items-center gap-0"
+         >
+          <div><i class="bi bi-instagram fs-1"></i></div>
+          <div>dsh.karaganda</div>
+         </a> -->
+        </dd>
+        <dd><a href="https://go.2gis.com/5kov9" class="link">г. Караганда, ул. Ерубаева, 44, каб. 305</a></dd>
+        <dd><a href="mailto:robototehnika303@mail.ru" class="link">robototehnika303@mail.ru</a></dd>
+        <dd><a href="tel:+7 700734 7214" class="link">+7 700 734 7214</a></dd>
+       </div>
+      </div>
+     </div>
+     <div class="col-12">
+      <figure class="contacts__img rounded-4 overflow-hidden">
+       <img src="assets/images/DSC00494.jpg" alt="" style="aspect-ratio: 16/9" />
+      </figure>
+     </div>
+    </div>
+    <div class="mt-5">
+     <p class="text-center">© 2024. Лаборатория робототехники <br />Crafted with care by Roma V.</p>
+    </div>
+   </section>
+  </footer>
+
   <script
    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

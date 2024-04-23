@@ -6,7 +6,6 @@
 html {
  scroll-behavior: smooth;
  scroll-padding-top: 4rem;
- font-size: 100%;
 }
 @media screen and (min-width: 2560px) {
  html {

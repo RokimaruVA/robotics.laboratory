@@ -1,11 +1,25 @@
+html {
+ scroll-padding-top: 5rem;
+}
+body {
+ animation: fadeIn 1s;
+}
 img {
  width: 100%;
 }
 .navbar {
  padding-block: 0;
 }
+@keyframes fadeIn {
+ from {
+  opacity: 0;
+ }
+ to {
+  opacity: 1;
+ }
+}
 section {
- margin-block: 4rem;
+ margin-block: 6rem;
 }
 .about {
  background-image: url(../images/DSC09950.png);
@@ -15,9 +29,37 @@ section {
 .about > div {
  min-height: 30rem;
 }
-.hero {
+.hero,
+.results {
  max-width: 64rem;
  margin-inline: auto;
+}
+.bg__hero-container {
+ height: min(19.9vh, 15.9rem);
+ overflow: clip;
+ margin-top: 0;
+}
+.bg__hero-img {
+ height: min(20vh, 16rem);
+ background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 1) 98%),
+  url("../images/e8ab61e8-467d-41cc-91d4-ec738fd898c3.png");
+ background-position: bottom 13% right 0%;
+ background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 1) 98%),
+  url("../images/DSC08985.png");
+ background-position: bottom 33% right 0%;
+ background-size: cover;
+}
+.results {
+ max-width: 64rem;
+ margin-inline: auto;
+ margin-block: 6rem;
+}
+.competition__schedule {
+ background-image: url("../images/e8ab61e8-467d-41cc-91d4-ec738fd898c3.png");
+ background-position: bottom 13% right 35%;
+}
+.competition__schedule > div {
+ max-width: 38rem;
 }
 
 .link {
